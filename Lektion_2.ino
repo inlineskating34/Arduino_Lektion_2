@@ -5,7 +5,7 @@ void setup() {
   pinMode(3, OUTPUT);
   pinMode(4, OUTPUT);
   pinMode(5, OUTPUT);
-  pinMode(2, OUTPUT);
+  pinMode(2, INPUT);
 }
 
 void loop() {
@@ -26,7 +26,7 @@ else { // il pulsante è premuto
 
   delay(250); // aspetta un quarto di secondo
   // cambia gli stati dei LED
-  digitalWrite(4 HIGH);
+  digitalWrite(4, HIGH);
   digitalWrite(5, LOW);
   delay(250); // aspetta un quarto di secondo
   }
